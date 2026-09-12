@@ -12,7 +12,7 @@ const port = Number(process.env.PORT || 3000);
 const sessionDays = Math.max(1, Number(process.env.SESSION_DAYS || 30));
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const publicFile = path.join(__dirname, 'attached_assets', 'index_1789055957712.html');
+const publicFile = path.join(__dirname, 'index_1789055957712.html');
 
 const pool = process.env.DATABASE_URL
   ? new Pool({ connectionString: process.env.DATABASE_URL, ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : undefined })
